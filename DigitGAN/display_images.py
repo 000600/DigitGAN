@@ -9,10 +9,10 @@ import matplotlib.pyplot as plt
 def load_real_samples():
 	# Load dataset
 	(x_train, _), (_, _) = load_data()
-
+	
 	# Add a third dimension for the graysale channel
 	x = expand_dims(x_train, axis = -1)
-
+	
 	# Preprocess the data
 	x = x.astype('float32') # Convert the data type to float
 	x /= 255.0 # Scale the data to a range between 0 and 1
