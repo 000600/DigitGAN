@@ -2,7 +2,7 @@
 ## The Model
 This GAN generates images of handwritten numbers (numbers zero through nine) based on an MNIST dataset containing images of numberes written by people. The model contains two neural networks: the generator and the discriminator. 
 
-The generator creates fake images of handwritten numbers by taking an input of a point in latent space (in this case a vector of 100 elements consisting of Gaussian random numbers) and outputting a 28 x 28 grayscale image. The generator uses standard LeakyReLU activation functions and an Adam optimizer with a learning rate of 0.0002 and a momentum of 0.5. The network has an architecture consisting of:
+The generator creates fake images of handwritten numbers by taking an input of a point in latent space (in this case a vector of 100 elements consisting of Gaussian random numbers) and outputting a 28 x 28 grayscale image. The generator uses standard Leaky ReLU activation functions and an Adam optimizer with a learning rate of 0.0002 and a momentum of 0.5. The network has an architecture consisting of:
 
 - 1 Input layer (with 6272 neurons, an input dimension of 100, and a Leaky ReLU activation function)
 - 1 Reshape layer (which reshapes the output into a 7 x 7 image)
