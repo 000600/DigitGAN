@@ -28,7 +28,7 @@ In this repository, an example .h5 file is included called **epoch100.h5**. I fo
 In addition to the saving of weights and the display of the GAN's generations, every five epochs the discriminator's accuracy on fake and real images is displayed. If the discriminator's accuracy in classifying fake images is relatively high, the GAN's generations are easy to classify as "fake" and it is not generating realistic images; an indicator that training needs to continue.
 
 ## The Dataset
-The dataset is an MNIST included within Keras and contains approximately 70,000 (60,000 images in the train set and 10,000 images in the test set) 28 x 28 pixel images of human handwriting of numbers 0 - 9 and is included within the **DigitGAN.py** and **load_GAN.py** files.
+The dataset is an MNIST included within the Keras library. The dataset contains approximately 70,000 (60,000 images in the train set and 10,000 images in the test set) 28 x 28 pixel images of human handwriting of numbers 0 - 9 and is included within the **DigitGAN.py** and **load_GAN.py** files.
 
 ## Libraries
 This neural network was created with the help of the Tensorflow library.
