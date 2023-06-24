@@ -49,6 +49,7 @@ def view_images(images, dim = 10):
 	
 	plt.show()
 
+# Set the number of latent dimensions
 latent_dim = 100
 
 # Create the generator model
